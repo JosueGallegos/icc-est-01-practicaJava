@@ -27,8 +27,18 @@ public class App {
         System.out.println(palabras);
 
         //CONTAR CUANTAS HAY EN LA CADENA
-        int letraA= cadena.split("")[2].length();
-        System.out.println(letraA);
+        char letraA = 'a';
+        int cont = 0;
+        for(int i = 0; i < cadena.length(); i++){
+            if (cadena.charAt(i) == letraA){
+            cont++;
+                
+            }
+        }
+        System.out.println("Letras a encotradas: "+ cont);
+
+        //int letraA= cadena.split("")[2].length();
+        //System.out.println(letraA);
 
 
     }
